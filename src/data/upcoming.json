@@ -1,11 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-11T08:27:36.519Z",
+  "generatedAt": "2026-07-11T11:04:39.955Z",
   "source": "Fastmail calendar (public-safe derived snapshot)",
   "window": {
-    "start": "2026-07-11T00:00:00+01:00",
+    "start": "2026-07-11T11:30:00+01:00",
     "end": "2027-12-31T23:59:59+00:00"
   },
   "eventConvention": "Escape room — <game> @ <venue>",
-  "events": []
+  "events": [
+    {
+      "id": "2026-07-11-grimm-up-north-enigma-rooms",
+      "date": "2026-07-11",
+      "time": "13:30",
+      "location": "Enigma Rooms, 8–10 Teall Street, Wakefield WF1 1PT",
+      "venue": "Enigma Rooms",
+      "game": "GRIMM Up North",
+      "note": null
+    },
+    {
+      "id": "2026-07-12-area-51-5-escaporium",
+      "date": "2026-07-12",
+      "time": "09:45",
+      "location": "Escaporium, Ground Floor, Berwick Street Mills, 23 Square Road, Halifax HX1 1QG",
+      "venue": "Escaporium",
+      "game": "Area 51.5",
+      "note": null
+    },
+    {
+      "id": "2026-07-12-operation-moonshine-escaporium",
+      "date": "2026-07-12",
+      "time": "12:00",
+      "location": "Escaporium, Ground Floor, Berwick Street Mills, 23 Square Road, Halifax HX1 1QG",
+      "venue": "Escaporium",
+      "game": "Operation Moonshine",
+      "note": null
+    },
+    {
+      "id": "2026-07-13-robin-hood-break-escape",
+      "date": "2026-07-13",
+      "time": "10:30",
+      "location": "Break Escape, 107 Upper Parliament Street, Nottingham NG1 6LA",
+      "venue": "Break Escape",
+      "game": "Robin Hood",
+      "note": null
+    }
+  ]
 }

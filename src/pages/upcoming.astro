@@ -15,7 +15,12 @@ import { formatDate, upcoming } from '../lib/rooms';
         <article class="room-card">
           <div class="room-card__number" aria-hidden="true">NEXT</div>
           <div class="room-card__body">
-            <div class="room-card__meta"><time datetime={event.date}>{formatDate(event.date)}</time><span>{event.location}</span></div>
+            <div class="room-card__meta">
+              <time datetime={event.time ? `${event.date}T${event.time}` : event.date}>
+                {formatDate(event.date)}{event.time ? ` · ${event.time}` : ''}
+              </time>
+              <span>{event.location}</span>
+            </div>
             <h3>{event.game}</h3>
             <p class="room-card__venue">{event.venue}</p>
             {event.note && <div class="room-card__facts"><span>{event.note}</span></div>}
