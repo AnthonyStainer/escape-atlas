@@ -48,7 +48,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/003-salisbury-escape-rooms.jpg",
+        "alt": "Anthony and Trenna pose beside the Salisbury Escape Rooms results screen after their early Salisbury game.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1500,
+        "height": 2000
+      }
     },
     {
       "id": 4,
@@ -61,7 +70,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/004-enigma-escape.jpg",
+        "alt": "Anthony and Trenna pose beneath The Killer finish-photo branding at Enigma Escape.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1500
+      }
     },
     {
       "id": 5,
@@ -217,7 +235,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/016-corruption-at-the-heart-of-wscs.jpg",
+        "alt": "Anthony and Trenna pose after Corruption at the heart of WSCS at Salisbury Escape Rooms, in forensic jackets before a Wessex Constabulary laboratory sign.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 960,
+        "height": 720
+      }
     },
     {
       "id": 17,
@@ -243,7 +270,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/018-a-hidden-past.jpg",
+        "alt": "Anthony and Trenna pose after A Hidden Past at Exciting Escapes, beneath the Xciting Escapes wall sign.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1500
+      }
     },
     {
       "id": 19,
@@ -503,7 +539,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/038-room-1-marvo-induction.jpg",
+        "alt": "Anthony and Trenna pose after Room 1 MARVO Induction at Marvo Mysteries, before the brick Marvo Mysteries backdrop.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1200,
+        "height": 709
+      }
     },
     {
       "id": 39,
@@ -581,7 +626,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/044-the-pavillion-perplex.jpg",
+        "alt": "Anthony and Trenna pose after The Pavillion Perplex at Pier Pressure, before the ornate Pavilion Perplex doors.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1370
+      }
     },
     {
       "id": 45,
@@ -607,7 +661,16 @@
       "players": 3,
       "allottedMinutes": 90,
       "notes": "3 players, 90 min game",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/046-titanic.jpg",
+        "alt": "A three-person team pose after Titanic at Houdini, in a corridor beneath Houdini branding.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 960,
+        "height": 800
+      }
     },
     {
       "id": 47,
@@ -672,7 +735,16 @@
       "players": 3,
       "allottedMinutes": 75,
       "notes": "3 players, 75 min game",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/051-misson-to-winchintzy.jpg",
+        "alt": "A three-person team pose after Misson to Winchintzy at ClueCapers, before a ClueCapers key-and-lock backdrop.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1364
+      }
     },
     {
       "id": 52,
@@ -741,7 +813,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/056-station-x.jpg",
+        "alt": "Anthony and Trenna pose after Station X at Time Trap Mysteries, holding the Station 1942 results board.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1920,
+        "height": 1080
+      }
     },
     {
       "id": 57,
@@ -806,7 +887,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/061-pirates-of-polaris.jpg",
+        "alt": "Anthony and Trenna pose after Pirates of Polaris at The Escapement, behind bars with a finish-time board.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1960,
+        "height": 1470
+      }
     },
     {
       "id": 62,
@@ -819,7 +909,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/062-egyptian-tomb.jpg",
+        "alt": "Anthony and Trenna pose after Egyptian Tomb at The Escapement, holding a finish-time board in an Egyptian-themed room.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1960,
+        "height": 1470
+      }
     },
     {
       "id": 63,
@@ -832,7 +931,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/063-the-pit.jpg",
+        "alt": "Anthony and Trenna pose after The Pit at The Escapement, wearing hard hats in a narrow tunnel.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1960,
+        "height": 1470
+      }
     },
     {
       "id": 64,
@@ -936,7 +1044,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/071-cabin-in-the-woods.jpg",
+        "alt": "A three-person team pose after Cabin in the woods at Chichester Escape Room, in a castle-themed finish-photo setting.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1500
+      }
     },
     {
       "id": 72,
@@ -949,7 +1066,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players, Jules",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/072-the-voices-we-hear.jpg",
+        "alt": "A three-person team pose after The voices we hear at Exciting Escapes, in a medical-themed room.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1960,
+        "height": 1470
+      }
     },
     {
       "id": 73,
@@ -1092,7 +1218,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/083-the-secret-lab.jpg",
+        "alt": "Anthony and Trenna pose after The Secret Lab at Locked in Edinburgh, behind black bars in a prison-themed setting.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1364
+      }
     },
     {
       "id": 84,
@@ -1105,7 +1240,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/084-the-cutting-room.jpg",
+        "alt": "Anthony and Trenna pose after The Cutting Room at Locked in Edinburgh, before an investigation board covered with maps and red string.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1364
+      }
     },
     {
       "id": 85,
@@ -1170,7 +1314,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/089-cursed-waters.jpg",
+        "alt": "A three-person team pose after Cursed Waters at Ellusion, beneath Legend of the Cursed Waters branding.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1364
+      }
     },
     {
       "id": 90,
@@ -1222,7 +1375,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/093-raver-quest.jpg",
+        "alt": "Anthony and Trenna pose after Raver Quest at Pier Pressure, before the RaverQuest graffiti wall.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1370
+      }
     },
     {
       "id": 94,
@@ -1235,7 +1397,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/094-bewilderbox-initiative.jpg",
+        "alt": "Anthony and Trenna pose after Bewilderbox initiative at BewilderBox, wearing goggles in the Bewilder Box control-room setting.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1364
+      }
     },
     {
       "id": 95,
@@ -1313,7 +1484,16 @@
       "players": 2,
       "allottedMinutes": 90,
       "notes": "90 min game",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/100-detention.jpg",
+        "alt": "Anthony and Trenna pose after Detention at CTRL ALT ESC, with a time board and oversized pencil prop.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1364
+      }
     },
     {
       "id": 101,
@@ -1378,7 +1558,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/105-death-at-the-lab.jpg",
+        "alt": "A three-person team pose after Death at the Lab at Salisbury Escape Rooms, in the Salisbury laboratory-themed finish photo.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 960,
+        "height": 720
+      }
     },
     {
       "id": 106,
@@ -1391,7 +1580,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/106-from-beyond.jpg",
+        "alt": "A three-person team pose after From beyond at Ellusion, beneath From Beyond branding in purple light.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 107,
@@ -1443,7 +1641,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/110-the-rig.jpg",
+        "alt": "Anthony and Trenna pose after The Rig at letsxscape, wearing yellow hard hats in the industrial room.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1127,
+        "height": 2000
+      }
     },
     {
       "id": 111,
@@ -1456,7 +1663,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/111-utopia.jpg",
+        "alt": "Anthony and Trenna pose after Utopia at Make your escape, before the neon hexagon finish wall.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1364
+      }
     },
     {
       "id": 112,
@@ -1521,7 +1737,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/116-the-vault.jpg",
+        "alt": "Anthony and Trenna pose after The Vault at Puzzelogical, inside the Puzzalogical vault-door photo frame.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 117,
@@ -1560,7 +1785,16 @@
       "players": 3,
       "allottedMinutes": 90,
       "notes": "3 players, 90 min game",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/119-danger-on-the-dance-floor-90s.jpg",
+        "alt": "A three-person team pose after Danger on the dance floor (90's) at Exciting Escapes, before metallic party streamers in pink and purple light.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1960,
+        "height": 1470
+      }
     },
     {
       "id": 120,
@@ -1573,7 +1807,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/120-disappearing-duchess.jpg",
+        "alt": "A three-person team pose after Disappearing Duchess at Exciting Escapes, in the narrow wooden room with lanterns.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1960,
+        "height": 1470
+      }
     },
     {
       "id": 121,
@@ -1586,7 +1829,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/121-modrophenia.jpg",
+        "alt": "A three-person team pose after Modrophenia at Pier Pressure, before the purple Modrophenia door.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1370
+      }
     },
     {
       "id": 122,
@@ -1612,7 +1864,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/123-the-black-queen.jpg",
+        "alt": "A three-person team pose after The Black Queen at Adventure Rooms, holding a We Escaped The Black Queen sign.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 124,
@@ -1664,7 +1925,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/127-disappearing-duchess-part-2.jpg",
+        "alt": "A three-person team pose after Disappearing Duchess part 2 at Exciting Escapes, in the sandbag-lined military corridor.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1960,
+        "height": 1470
+      }
     },
     {
       "id": 128,
@@ -1703,7 +1973,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players, Pierre",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/130-the-forbidden-room-of-fun.jpg",
+        "alt": "A three-person team pose after The forbidden room of fun at Trapped in fiction, inside the open-book Trapped in Fiction result graphic.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1080,
+        "height": 1080
+      }
     },
     {
       "id": 131,
@@ -1729,7 +2008,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": "3 players (47:21 as 2)",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/132-escape-from-space.jpg",
+        "alt": "A three-person team pose after Escape from Space at Salisbury Escape Rooms, in the spacecraft-themed room with a glowing prop.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1500
+      }
     },
     {
       "id": 133,
@@ -1742,7 +2030,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/133-guardian-of-the-gallery.jpg",
+        "alt": "A three-person team pose after Guardian of the gallery at Escape Rushden, in the purple Escape Rushden room beside a dog.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 134,
@@ -1755,7 +2052,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/134-the-enchanted-forest.jpg",
+        "alt": "A three-person team pose after The enchanted forest at Breakescape, in the winter-forest room beside a lamppost.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1500
+      }
     },
     {
       "id": 135,
@@ -1768,7 +2074,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/135-spellbound.jpg",
+        "alt": "A three-person team pose after Spellbound at Make your escape, in the cobwebbed spooky room with skull props.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1364
+      }
     },
     {
       "id": 136,
@@ -1846,7 +2161,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/141-temple-quest.jpg",
+        "alt": "Anthony and Trenna pose after Temple quest at Clue Cracker, holding We Escaped Temple Quest signs.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 142,
@@ -1872,7 +2196,16 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/143-coco-loco.jpg",
+        "alt": "A three-person team pose after Coco Loco at Exitus, beside pub chalkboards and a laboratory warning door.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 144,
@@ -1885,7 +2218,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/144-the-brig.jpg",
+        "alt": "Anthony and Trenna pose after The Brig at Live Escape Salisbury, wearing pirate hats in the wooden brig set.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 145,
@@ -1924,7 +2266,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": "60 min $ challenge",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/147-mobery.jpg",
+        "alt": "Anthony and Trenna pose after Mobery at Agent Brains, inside the Mobbery vault-themed photo frame.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 148,
@@ -1989,7 +2340,16 @@
       "players": 3,
       "allottedMinutes": 75,
       "notes": "3 players, 75 min game",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/152-alien.jpg",
+        "alt": "A three-person team pose after Alien at Puzzelogical, in the red-lit spaceship room.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 153,
@@ -2002,7 +2362,16 @@
       "players": 2,
       "allottedMinutes": 75,
       "notes": "75 min game",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/153-the-seaside.jpg",
+        "alt": "Anthony and Trenna pose after The Seaside at Other World Escapes, before striped seaside doors.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 154,
@@ -2015,7 +2384,16 @@
       "players": 2,
       "allottedMinutes": 90,
       "notes": "90 min game",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/154-xibalba.jpg",
+        "alt": "Anthony and Trenna pose after Xibalba at Other World Escapes, holding the Xibalba result sign before a cave-and-vines backdrop.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 155,
@@ -2028,7 +2406,16 @@
       "players": 2,
       "allottedMinutes": 120,
       "notes": "120 min game",
-      "sourceFlags": []
+      "sourceFlags": [
+        "message-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/155-the-reading-witch.jpg",
+        "alt": "Anthony and Trenna pose after The Reading Witch at Deadlocked, holding Frightseers and 01:35 result boards in The Reading Witch set.",
+        "caption": "Post-game team photo.",
+        "width": 1600,
+        "height": 900
+      }
     },
     {
       "id": 156,
@@ -2041,7 +2428,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": "Won £120.53",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/156-trapped-for-cash.jpg",
+        "alt": "Anthony and Trenna pose after Trapped for Cash at Mindworks, holding the Trapped for Cash cheque prop.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 157,
@@ -2054,7 +2450,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/157-loot-the-lanes.jpg",
+        "alt": "Anthony and Trenna pose after Loot the Lanes at Pier Pressure, in the Loot the Lanes street scene beside a red phone box.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 2000,
+        "height": 1370
+      }
     },
     {
       "id": 158,
@@ -2067,7 +2472,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": "Confirmed by post-game review email and Bath-day notes",
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/158-eternal-life.jpg",
+        "alt": "Anthony and Trenna pose after Eternal Life at Tempo Escape Room Bath, before the retro Eternal Life finish-photo backdrop.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1080,
+        "height": 1080
+      }
     },
     {
       "id": 159,
@@ -2080,7 +2494,16 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": null,
-      "sourceFlags": []
+      "sourceFlags": [
+        "email-photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/159-loctopus.jpg",
+        "alt": "Anthony and Trenna pose after Loctopus at Knock Out Escape Rooms, in the blue-lit Locktopus room beside the mission-complete screen.",
+        "caption": "Post-game team photo recovered from the venue's email.",
+        "width": 1600,
+        "height": 1200
+      }
     },
     {
       "id": 160,
