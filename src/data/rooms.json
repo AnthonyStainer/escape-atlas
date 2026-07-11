@@ -1,12 +1,14 @@
 {
   "schemaVersion": 1,
   "source": {
-    "label": "Trenna's authoritative escape-room history",
+    "label": "Escape Atlas canonical history",
     "reference": "memory/reference/escape-rooms.md",
     "referenceUpdated": "2026-07-11",
     "workbook": "trenna-escape-rooms-2026-07-11.xlsx",
     "workbookSha256": "0513e77c0c6cd367cc71ce1f2f60799594ac27066bfe0898a3f5fcdffdd97f28",
-    "recordCount": 159
+    "migrationRecordCount": 159,
+    "recordCount": 160,
+    "updated": "2026-07-11"
   },
   "rooms": [
     {
@@ -2079,6 +2081,29 @@
       "allottedMinutes": null,
       "notes": null,
       "sourceFlags": []
+    },
+    {
+      "id": 160,
+      "date": "2026-07-11",
+      "location": "Wakefield",
+      "venue": "Escapable",
+      "game": "Outatime",
+      "completionTime": "00:37:18",
+      "completionSeconds": 2238,
+      "players": 2,
+      "allottedMinutes": null,
+      "notes": null,
+      "sourceFlags": [
+        "message-confirmed",
+        "photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/160-outatime.jpg",
+        "alt": "Anthony and Trenna smiling after completing Outatime, with Anthony holding the 37:18 finish timer.",
+        "caption": "Outatime completed in 37:18.",
+        "width": 2560,
+        "height": 1920
+      }
     }
   ]
 }

@@ -6,7 +6,7 @@ Target: [atlas.mei.place](https://atlas.mei.place)
 
 ## What It Contains
 
-- A validated canonical history of 159 completed rooms from 2015–2026.
+- A validated canonical history of 160 completed rooms from 2015–2026.
 - A searchable and filterable history.
 - Individual room pages that preserve unknown source fields honestly.
 - Evidence-safe statistics and frequency summaries.
@@ -54,7 +54,7 @@ Raw ICS, attendee addresses, descriptions, booking references, payment details a
 
 `npm run validate` enforces:
 
-- 159 sequential unique completed-room IDs;
+- non-empty, sequential unique completed-room IDs and a matching source count;
 - ISO dates and recorded-time consistency;
 - explicit source flags for source-level duplicate core fields;
 - required public fields for upcoming rooms; and
@@ -62,13 +62,10 @@ Raw ICS, attendee addresses, descriptions, booking references, payment details a
 
 Rows #54 and #55 are intentionally both retained: the source records two different Staines games but omits both game names, leaving their visible core fields identical.
 
+The 159-room workbook import is immutable migration evidence. New rooms are appended to the canonical JSON through the [message-to-live workflow](docs/message-to-live.md); the spreadsheet does not need parallel maintenance.
+
 ## Deployment
 
-Every push runs validation, type checks and a production build in GitHub Actions. Cloudflare Pages deployment is gated by the repository variable `CLOUDFLARE_READY`; it remains disabled until the one-time account/token handoff is complete.
+Every push runs validation, type checks and a production build in GitHub Actions. The production Cloudflare Pages project, `escape-atlas`, is connected directly to the repository and automatically deploys `main` to [atlas.mei.place](https://atlas.mei.place).
 
-Required GitHub Actions secrets:
-
-- `CLOUDFLARE_ACCOUNT_ID`
-- `CLOUDFLARE_API_TOKEN`
-
-The production Pages project is `escape-atlas`; the custom hostname is `atlas.mei.place`.
+The explicit Wrangler workflow remains disabled behind `CLOUDFLARE_READY=false`; it is a recovery path, not the normal deployment route.

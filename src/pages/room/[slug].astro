@@ -40,6 +40,19 @@ const title = roomTitle(room);
       {room.sourceFlags.includes('duplicate-core-fields') && (
         <p class="quiet">The source records this as one of two separate rooms with the same visible core fields. Both records are preserved.</p>
       )}
+      {room.photo && (
+        <figure class="room-photo">
+          <img
+            src={room.photo.src}
+            alt={room.photo.alt}
+            width={room.photo.width}
+            height={room.photo.height}
+            loading="eager"
+            decoding="async"
+          />
+          {room.photo.caption && <figcaption>{room.photo.caption}</figcaption>}
+        </figure>
+      )}
     </article>
 
     <aside class="room-detail__aside" aria-label="Room facts">

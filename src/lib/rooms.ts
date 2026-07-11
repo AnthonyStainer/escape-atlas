@@ -13,6 +13,13 @@ export interface Room {
   allottedMinutes: number | null;
   notes: string | null;
   sourceFlags: string[];
+  photo?: {
+    src: string;
+    alt: string;
+    caption?: string | null;
+    width?: number;
+    height?: number;
+  } | null;
 }
 
 export interface UpcomingEvent {
