@@ -1,0 +1,22 @@
+{
+  "name": "escape-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "validate": "node scripts/validate-data.mjs",
+    "check": "npm run validate && astro check && astro build",
+    "import:history": "node scripts/import-reference.mjs",
+    "generate:upcoming": "node scripts/generate-upcoming.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.0.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.6",
+    "typescript": "^5.9.3"
+  }
+}

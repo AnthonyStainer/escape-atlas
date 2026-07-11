@@ -1,0 +1,103 @@
+---
+import RoomCard from '../components/RoomCard.astro';
+import StatCard from '../components/StatCard.astro';
+import Base from '../layouts/Base.astro';
+import {
+  formatDuration,
+  locations,
+  roomsNewestFirst,
+  shortestRecorded,
+  stats,
+  venues,
+  years,
+} from '../lib/rooms';
+
+const maxYearCount = Math.max(...years.map((year) => year.count));
+---
+
+<Base title="Escape Atlas">
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow">Anthony + Trenna · Est. 2015</p>
+      <h1>Every locked door leaves a mark on the map.</h1>
+      <p class="lede">A living record of {stats.total} escape rooms, {stats.locations} places and a frankly unreasonable commitment to seeing what is behind the next door.</p>
+      <div class="hero-actions">
+        <a class="button" href="/history/">Explore the full history <span aria-hidden="true">→</span></a>
+        <a class="button button--ghost" href="/upcoming/">See what is next</a>
+      </div>
+    </div>
+    <div class="hero__compass" aria-hidden="true"></div>
+  </section>
+
+  <section class="section" aria-labelledby="numbers-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">The shape of the journey</p>
+        <h2 id="numbers-heading">The numbers, honestly.</h2>
+      </div>
+      <p>Counts come from the recorded history. Missing times and game names stay missing—this atlas prefers a gap to a guess.</p>
+    </div>
+    <div class="stats-grid">
+      <StatCard value={stats.total} label="rooms completed" detail={`${stats.first.date.slice(0, 4)}–${stats.latest.date.slice(0, 4)}`} />
+      <StatCard value={stats.locations} label="locations visited" detail={`${stats.venues} recorded venues`} />
+      <StatCard value={stats.timed} label="recorded times" detail={`${stats.total - stats.timed} honest unknowns`} />
+      <StatCard value={formatDuration(shortestRecorded.completionTime)} label="shortest recorded time" detail={`Room #${shortestRecorded.id}`} />
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="recent-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Recent coordinates</p>
+        <h2 id="recent-heading">The latest doors.</h2>
+      </div>
+      <a class="text-link" href="/history/">All {stats.total} rooms <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="room-list">
+      {roomsNewestFirst.slice(0, 6).map((room) => <RoomCard room={room} compact />)}
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="terrain-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Familiar terrain</p>
+        <h2 id="terrain-heading">Where the map gets dense.</h2>
+      </div>
+      <p>Frequency is not a rating. It simply shows the places and operators that have become part of the story.</p>
+    </div>
+    <div class="rank-grid">
+      <article class="rank-list">
+        <h3>Most-visited locations</h3>
+        <ol>
+          {locations.slice(0, 7).map((item) => <li><span>{item.label}</span><span>{item.count}</span></li>)}
+        </ol>
+      </article>
+      <article class="rank-list">
+        <h3>Most-visited venues</h3>
+        <ol>
+          {venues.slice(0, 7).map((item) => <li><span>{item.label}</span><span>{item.count}</span></li>)}
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="years-heading">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">A dozen chapters</p>
+        <h2 id="years-heading">Rooms by year.</h2>
+      </div>
+      <p>A busy year is not automatically a better one—but it does leave a lovely trail.</p>
+    </div>
+    <div class="year-bars">
+      {years.map((year) => (
+        <div class="year-bar">
+          <span>{year.label}</span>
+          <span class="year-bar__track"><span class="year-bar__fill" style={`width: ${(year.count / maxYearCount) * 100}%`}></span></span>
+          <strong>{year.count}</strong>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>

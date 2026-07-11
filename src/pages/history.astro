@@ -1,0 +1,86 @@
+---
+import RoomCard from '../components/RoomCard.astro';
+import Base from '../layouts/Base.astro';
+import { locations, roomsNewestFirst, stats, years } from '../lib/rooms';
+---
+
+<Base title="History" description={`Search and filter Anthony and Trenna's ${stats.total}-room escape history.`} eyebrow="The complete route">
+  <header class="page-header">
+    <h1>{stats.total} doors, in order.</h1>
+    <p class="lede">Search by room, venue or place. Filter by year and location. Unknown source fields remain visible as unknown rather than quietly rewritten.</p>
+  </header>
+
+  <section aria-label="History filters">
+    <div class="filters">
+      <label>
+        Search
+        <input id="history-search" type="search" placeholder="Room, venue or place…" autocomplete="off" />
+      </label>
+      <label>
+        Year
+        <select id="history-year">
+          <option value="">All years</option>
+          {years.toReversed().map((year) => <option value={year.label}>{year.label}</option>)}
+        </select>
+      </label>
+      <label>
+        Location
+        <select id="history-location">
+          <option value="">All locations</option>
+          {[...locations].sort((a, b) => a.label.localeCompare(b.label)).map((location) => <option value={location.label.toLowerCase()}>{location.label}</option>)}
+        </select>
+      </label>
+    </div>
+    <p class="results-line" id="history-count">Showing all {stats.total} rooms</p>
+
+    <div class="room-list" id="history-list">
+      {roomsNewestFirst.map((room) => (
+        <div
+          class="history-item"
+          data-history-item
+          data-search={[room.game, room.venue, room.location, room.id].filter(Boolean).join(' ').toLowerCase()}
+          data-year={room.date.slice(0, 4)}
+          data-location={room.location.toLowerCase()}
+        >
+          <RoomCard room={room} />
+        </div>
+      ))}
+    </div>
+
+    <div class="empty-state" id="history-empty" hidden>
+      <h2>No door at those coordinates.</h2>
+      <p>Try a broader search or clear one of the filters.</p>
+    </div>
+  </section>
+</Base>
+
+<script>
+  const search = document.querySelector<HTMLInputElement>('#history-search');
+  const year = document.querySelector<HTMLSelectElement>('#history-year');
+  const location = document.querySelector<HTMLSelectElement>('#history-location');
+  const count = document.querySelector<HTMLElement>('#history-count');
+  const empty = document.querySelector<HTMLElement>('#history-empty');
+  const items = [...document.querySelectorAll<HTMLElement>('[data-history-item]')];
+
+  function applyFilters() {
+    const query = search?.value.trim().toLowerCase() ?? '';
+    const selectedYear = year?.value ?? '';
+    const selectedLocation = location?.value ?? '';
+    let visible = 0;
+
+    for (const item of items) {
+      const matches = (!query || item.dataset.search?.includes(query))
+        && (!selectedYear || item.dataset.year === selectedYear)
+        && (!selectedLocation || item.dataset.location === selectedLocation);
+      item.hidden = !matches;
+      if (matches) visible += 1;
+    }
+
+    if (count) count.textContent = visible === items.length ? `Showing all ${visible} rooms` : `Showing ${visible} of ${items.length} rooms`;
+    if (empty) empty.hidden = visible !== 0;
+  }
+
+  search?.addEventListener('input', applyFilters);
+  year?.addEventListener('change', applyFilters);
+  location?.addEventListener('change', applyFilters);
+</script>

@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  eyebrow?: string;
+}
+
+const {
+  title,
+  description = "Anthony and Trenna's living escape-room history, maintained by Mei.",
+  eyebrow,
+} = Astro.props;
+const pathname = Astro.url.pathname;
+const navigation = [
+  { href: '/', label: 'Atlas' },
+  { href: '/history/', label: 'History' },
+  { href: '/upcoming/', label: 'Upcoming' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#0b1217" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet" />
+    <title>{title === 'Escape Atlas' ? title : `${title} · Escape Atlas`}</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="wordmark" href="/" aria-label="Escape Atlas home">
+          <span class="wordmark__mark" aria-hidden="true">⌖</span>
+          <span>Escape Atlas</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          {navigation.map((item) => (
+            <a class:list={{ active: item.href === '/' ? pathname === '/' : pathname.startsWith(item.href) }} href={item.href}>
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </header>
+
+      <main>
+        {eyebrow && <p class="page-eyebrow">{eyebrow}</p>}
+        <slot />
+      </main>
+
+      <footer class="site-footer">
+        <p>Mapped with care by Mei for Anthony &amp; Trenna.</p>
+        <p class="quiet">A living record, not a leaderboard.</p>
+      </footer>
+    </div>
+  </body>
+</html>

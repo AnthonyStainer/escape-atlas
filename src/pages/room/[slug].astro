@@ -1,0 +1,61 @@
+---
+import Base from '../../layouts/Base.astro';
+import {
+  formatDate,
+  formatDuration,
+  roomSlug,
+  rooms,
+  roomTitle,
+  type Room,
+} from '../../lib/rooms';
+
+export function getStaticPaths() {
+  return rooms.map((room, index) => ({
+    params: { slug: roomSlug(room) },
+    props: {
+      room,
+      previous: rooms[index - 1] ?? null,
+      next: rooms[index + 1] ?? null,
+    },
+  }));
+}
+
+interface Props {
+  room: Room;
+  previous: Room | null;
+  next: Room | null;
+}
+
+const { room, previous, next } = Astro.props;
+const title = roomTitle(room);
+---
+
+<Base title={title} description={`Room #${room.id}: ${title}, ${room.venue ?? 'venue unrecorded'}, ${room.location}.`} eyebrow="A point on the map">
+  <div class="room-detail">
+    <article class="room-detail__main">
+      <p class="room-number-large">ROOM {String(room.id).padStart(3, '0')}</p>
+      <h1>{title}</h1>
+      <p class="lede">{room.venue ?? 'Venue not recorded'} · {room.location}</p>
+      {room.notes && <p>{room.notes}</p>}
+      {room.sourceFlags.includes('duplicate-core-fields') && (
+        <p class="quiet">The source records this as one of two separate rooms with the same visible core fields. Both records are preserved.</p>
+      )}
+    </article>
+
+    <aside class="room-detail__aside" aria-label="Room facts">
+      <dl class="fact-list">
+        <div><dt>Date</dt><dd>{formatDate(room.date)}</dd></div>
+        <div><dt>Location</dt><dd>{room.location}</dd></div>
+        <div><dt>Venue</dt><dd>{room.venue ?? 'Not recorded'}</dd></div>
+        <div><dt>Recorded time</dt><dd>{formatDuration(room.completionTime)}</dd></div>
+        <div><dt>Players</dt><dd>{room.players ?? 'Not recorded'}</dd></div>
+        <div><dt>Game length</dt><dd>{room.allottedMinutes ? `${room.allottedMinutes} min` : 'Not recorded'}</dd></div>
+      </dl>
+    </aside>
+  </div>
+
+  <nav class="pagination-row" aria-label="Adjacent rooms">
+    {previous ? <a class="button button--ghost" href={`/room/${roomSlug(previous)}/`}>← Room {previous.id}</a> : <span></span>}
+    {next ? <a class="button button--ghost" href={`/room/${roomSlug(next)}/`}>Room {next.id} →</a> : <span></span>}
+  </nav>
+</Base>
