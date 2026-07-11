@@ -56,11 +56,14 @@ Raw ICS, attendee addresses, descriptions, booking references, payment details a
 
 - non-empty, sequential unique completed-room IDs and a matching source count;
 - ISO dates and recorded-time consistency;
+- a positive player count and game length for every room;
 - explicit source flags for source-level duplicate core fields;
 - required public fields for upcoming rooms; and
 - forbidden operational fields staying out of the public snapshot.
 
 Rows #54 and #55 are intentionally both retained: the source records two different Staines games but omits both game names, leaving their visible core fields identical.
+
+Anthony confirmed that an unrecorded player count means the room was played by Anthony and Trenna, so those records use `2`. Unrecorded game lengths use an explicit `60`-minute assumption. Any recorded exceptions are preserved.
 
 The 159-room workbook import is immutable migration evidence. New rooms are appended to the canonical JSON through the [message-to-live workflow](docs/message-to-live.md); the spreadsheet does not need parallel maintenance.
 

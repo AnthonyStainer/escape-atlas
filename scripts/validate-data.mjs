@@ -25,6 +25,8 @@ for (const [index, room] of history.rooms.entries()) {
     const [hours, minutes, seconds] = room.completionTime.split(':').map(Number);
     if ((hours * 3600) + (minutes * 60) + seconds !== room.completionSeconds) errors.push(`${prefix}.completionSeconds does not match completionTime`);
   }
+  if (!Number.isInteger(room.players) || room.players < 1) errors.push(`${prefix}.players must be a positive integer`);
+  if (!Number.isInteger(room.allottedMinutes) || room.allottedMinutes < 1) errors.push(`${prefix}.allottedMinutes must be a positive integer`);
   if (!Array.isArray(room.sourceFlags)) errors.push(`${prefix}.sourceFlags must be an array`);
   if (room.photo !== undefined && room.photo !== null) {
     if (!room.photo.src?.startsWith('/images/rooms/')) errors.push(`${prefix}.photo.src must be under /images/rooms/`);

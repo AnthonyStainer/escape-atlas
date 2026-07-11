@@ -9,7 +9,7 @@ Anthony or Trenna can send Mei the result after a room. The Atlas repository is 
 - Location and venue, either stated in the message or verified from the existing booking evidence.
 - Completion time, or an explicit statement that no time was recorded.
 
-Player count, game length, notes and a finish photo are optional. Unknown values stay `null`; they are never guessed.
+Player count, game length, notes and a finish photo are optional. When the player count is omitted, use `2` for Anthony and Trenna. When the game length is omitted, use the agreed `60`-minute assumption. Explicitly supplied exceptions always win; other genuinely unknown fields stay `null`.
 
 ## Publication pass
 

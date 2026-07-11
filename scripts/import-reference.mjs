@@ -53,8 +53,8 @@ for (const line of source.split('\n')) {
     game: nullIfBlank(match[5]),
     completionTime,
     completionSeconds: secondsFor(completionTime),
-    players: playersMatch ? Number(playersMatch[1]) : null,
-    allottedMinutes: allottedMatch ? Number(allottedMatch[1]) : null,
+    players: playersMatch ? Number(playersMatch[1]) : 2,
+    allottedMinutes: allottedMatch ? Number(allottedMatch[1]) : 60,
     notes,
     sourceFlags: [],
   });

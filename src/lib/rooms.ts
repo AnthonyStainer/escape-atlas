@@ -9,8 +9,8 @@ export interface Room {
   game: string | null;
   completionTime: string | null;
   completionSeconds: number | null;
-  players: number | null;
-  allottedMinutes: number | null;
+  players: number;
+  allottedMinutes: number;
   notes: string | null;
   sourceFlags: string[];
   photo?: {
