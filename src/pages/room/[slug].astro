@@ -5,6 +5,7 @@ import {
   formatDuration,
   roomSlug,
   rooms,
+  roomPhotoCaption,
   roomTitle,
   type Room,
 } from '../../lib/rooms';
@@ -28,17 +29,18 @@ interface Props {
 
 const { room, previous, next } = Astro.props;
 const title = roomTitle(room);
+const photoCaption = roomPhotoCaption(room);
 ---
 
-<Base title={title} description={`Room #${room.id}: ${title}, ${room.venue ?? 'venue unrecorded'}, ${room.location}.`} eyebrow="A point on the map">
+<Base title={title} description={`Room #${room.id}: ${title}, ${room.venue ?? 'venue unknown'}, ${room.location}.`} eyebrow="A point on the map">
   <div class="room-detail">
     <article class="room-detail__main">
       <p class="room-number-large">ROOM {String(room.id).padStart(3, '0')}</p>
       <h1>{title}</h1>
-      <p class="lede">{room.venue ?? 'Venue not recorded'} · {room.location}</p>
-      {room.notes && <p>{room.notes}</p>}
+      <p class="lede">{room.venue ?? 'Venue unknown'} · {room.location}</p>
+      {room.publicNote && <p>{room.publicNote}</p>}
       {room.sourceFlags.includes('duplicate-core-fields') && (
-        <p class="quiet">The source records this as one of two separate rooms with the same visible core fields. Both records are preserved.</p>
+        <p class="quiet">One of two separate games played here on the same day. Their names have been lost to history.</p>
       )}
       {room.photo && (
         <figure class="room-photo">
@@ -50,7 +52,7 @@ const title = roomTitle(room);
             loading="eager"
             decoding="async"
           />
-          {room.photo.caption && <figcaption>{room.photo.caption}</figcaption>}
+          {photoCaption && <figcaption>{photoCaption}</figcaption>}
         </figure>
       )}
     </article>
@@ -59,10 +61,10 @@ const title = roomTitle(room);
       <dl class="fact-list">
         <div><dt>Date</dt><dd>{formatDate(room.date)}</dd></div>
         <div><dt>Location</dt><dd>{room.location}</dd></div>
-        <div><dt>Venue</dt><dd>{room.venue ?? 'Not recorded'}</dd></div>
-        <div><dt>Recorded time</dt><dd>{formatDuration(room.completionTime)}</dd></div>
-        <div><dt>Players</dt><dd>{room.players ?? 'Not recorded'}</dd></div>
-        <div><dt>Game length</dt><dd>{room.allottedMinutes ? `${room.allottedMinutes} min` : 'Not recorded'}</dd></div>
+        <div><dt>Venue</dt><dd>{room.venue ?? 'Unknown'}</dd></div>
+        <div><dt>Escape time</dt><dd>{formatDuration(room.completionTime)}</dd></div>
+        <div><dt>Players</dt><dd>{room.players}</dd></div>
+        <div><dt>Game length</dt><dd>{room.allottedMinutes} min</dd></div>
       </dl>
     </aside>
   </div>

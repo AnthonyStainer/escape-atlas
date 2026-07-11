@@ -1066,6 +1066,7 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players, Jules",
+      "publicNote": "Escaped with Jules.",
       "sourceFlags": [
         "email-photo-confirmed"
       ],
@@ -1555,11 +1556,12 @@
       "game": "Death at the Lab",
       "completionTime": "00:46:34",
       "completionSeconds": 2794,
-      "players": 2,
+      "players": 3,
       "allottedMinutes": 60,
       "notes": null,
       "sourceFlags": [
-        "email-photo-confirmed"
+        "email-photo-confirmed",
+        "photo-player-count-confirmed"
       ],
       "photo": {
         "src": "/images/rooms/105-death-at-the-lab.jpg",
@@ -1973,6 +1975,7 @@
       "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players, Pierre",
+      "publicNote": "Escaped with Pierre.",
       "sourceFlags": [
         "email-photo-confirmed"
       ],
@@ -2005,11 +2008,13 @@
       "game": "Escape from Space",
       "completionTime": "00:44:02",
       "completionSeconds": 2642,
-      "players": 2,
+      "players": 3,
       "allottedMinutes": 60,
       "notes": "3 players (47:21 as 2)",
+      "publicNote": "Previous two-player time: 47:21.",
       "sourceFlags": [
-        "email-photo-confirmed"
+        "email-photo-confirmed",
+        "photo-player-count-confirmed"
       ],
       "photo": {
         "src": "/images/rooms/132-escape-from-space.jpg",
@@ -2428,6 +2433,7 @@
       "players": 2,
       "allottedMinutes": 60,
       "notes": "Won £120.53",
+      "publicNote": "Won £120.53.",
       "sourceFlags": [
         "email-photo-confirmed"
       ],

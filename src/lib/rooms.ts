@@ -12,6 +12,7 @@ export interface Room {
   players: number;
   allottedMinutes: number;
   notes: string | null;
+  publicNote?: string | null;
   sourceFlags: string[];
   photo?: {
     src: string;
@@ -51,7 +52,7 @@ export function roomSlug(room: Room): string {
 }
 
 export function roomTitle(room: Room): string {
-  return room.game ?? `Unnamed room #${room.id}`;
+  return room.game ?? 'Room name lost to history';
 }
 
 export function formatDate(value: string, options: Intl.DateTimeFormatOptions = {}): string {
@@ -65,10 +66,18 @@ export function formatDate(value: string, options: Intl.DateTimeFormatOptions = 
 }
 
 export function formatDuration(value: string | null): string {
-  if (!value) return 'Not recorded';
+  if (!value) return 'Unknown';
   const [hours, minutes, seconds] = value.split(':').map(Number);
   if (hours === 0) return `${minutes}:${String(seconds).padStart(2, '0')}`;
   return `${hours}h ${String(minutes).padStart(2, '0')}m`;
+}
+
+export function roomPhotoCaption(room: Room): string | null {
+  if (!room.photo?.caption) return null;
+  if (room.photo.caption === "Post-game team photo recovered from the venue's email.") {
+    return 'Post-game team photo.';
+  }
+  return room.photo.caption;
 }
 
 function countBy(values: Array<string | null>): Array<{ label: string; count: number }> {

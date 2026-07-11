@@ -42,7 +42,7 @@ for (const line of source.split('\n')) {
   const id = Number(match[1]);
   const completionTime = nullIfBlank(match[6]);
   const notes = nullIfBlank(match[7]);
-  const playersMatch = notes?.match(/(?:^|,\s*)(\d+) players?(?:,|$)/i);
+  const playersMatch = notes?.match(/(?:^|,\s*)(\d+) players?\b/i);
   const allottedMatch = notes?.match(/(?:^|,\s*)(\d+) min(?:ute)? game(?:,|$)/i);
 
   rooms.push({

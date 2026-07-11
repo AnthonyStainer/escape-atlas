@@ -18,10 +18,10 @@ const { room, compact = false } = Astro.props;
       <span>{room.location}</span>
     </div>
     <h3><a href={`/room/${roomSlug(room)}/`}>{roomTitle(room)}</a></h3>
-    <p class="room-card__venue">{room.venue ?? 'Venue not recorded'}</p>
+    <p class="room-card__venue">{room.venue ?? 'Venue unknown'}</p>
     {!compact && (
       <div class="room-card__facts">
-        <span>{room.completionTime ? `Recorded time ${formatDuration(room.completionTime)}` : 'Time not recorded'}</span>
+        <span>{room.completionTime ? `Escaped in ${formatDuration(room.completionTime)}` : 'Finish time unknown'}</span>
         {room.players && <span>{room.players} players</span>}
       </div>
     )}

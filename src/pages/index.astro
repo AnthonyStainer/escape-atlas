@@ -33,15 +33,15 @@ const maxYearCount = Math.max(...years.map((year) => year.count));
     <div class="section-heading">
       <div>
         <p class="eyebrow">The shape of the journey</p>
-        <h2 id="numbers-heading">The numbers, honestly.</h2>
+        <h2 id="numbers-heading">The journey in numbers.</h2>
       </div>
-      <p>Counts come from the recorded history. Missing times and game names stay missing—this atlas prefers a gap to a guess.</p>
+      <p>A decade of locked rooms, close calls and steadily expanding horizons.</p>
     </div>
     <div class="stats-grid">
       <StatCard value={stats.total} label="rooms completed" detail={`${stats.first.date.slice(0, 4)}–${stats.latest.date.slice(0, 4)}`} />
-      <StatCard value={stats.locations} label="locations visited" detail={`${stats.venues} recorded venues`} />
-      <StatCard value={stats.timed} label="recorded times" detail={`${stats.total - stats.timed} honest unknowns`} />
-      <StatCard value={formatDuration(shortestRecorded.completionTime)} label="shortest recorded time" detail={`Room #${shortestRecorded.id}`} />
+      <StatCard value={stats.locations} label="locations visited" detail={`${stats.venues} venues along the way`} />
+      <StatCard value={stats.timed} label="timed escapes" detail={`${stats.total - stats.timed} lost to history`} />
+      <StatCard value={formatDuration(shortestRecorded.completionTime)} label="fastest escape on record" detail={`Room #${shortestRecorded.id}`} />
     </div>
   </section>
 
@@ -64,7 +64,7 @@ const maxYearCount = Math.max(...years.map((year) => year.count));
         <p class="eyebrow">Familiar terrain</p>
         <h2 id="terrain-heading">Where the map gets dense.</h2>
       </div>
-      <p>Frequency is not a rating. It simply shows the places and operators that have become part of the story.</p>
+      <p>Some places keep drawing us back. These are the towns, cities and operators we have visited most.</p>
     </div>
     <div class="rank-grid">
       <article class="rank-list">
