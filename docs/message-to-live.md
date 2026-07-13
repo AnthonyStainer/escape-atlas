@@ -17,14 +17,20 @@ Player count, game length, notes and a finish photo are optional. When the playe
 2. Confirm the next sequential ID and check for a duplicate date/location/venue/game record.
 3. Append the room to `src/data/rooms.json` and update `source.recordCount` and `source.updated`.
 4. If a supplied photo is intended for the public Atlas, store it under `public/images/rooms/` and add accessible alt text. Never publish booking references, QR codes, email addresses, phone numbers, payment details or raw calendar data.
-5. Run `npm run check` and inspect the generated room page at desktop and mobile widths.
-6. Commit and push only the bounded Atlas change.
-7. Wait for GitHub verification and Cloudflare Pages deployment, then read back the homepage, history entry, room page, image and HTTPS response from `atlas.mei.place`.
-8. Report the live link to Anthony.
+5. Remove the exact matching completed entry from `src/data/upcoming.json`, if present, and refresh its `generatedAt` timestamp. Do not rescan Fastmail unless a new booking also needs publishing.
+6. Run `npm run validate` and `git diff --check`.
+7. Commit and push only the bounded Atlas change, confirm `HEAD` matches `origin/main`, and report the predicted room link as deploying.
+8. Stop. Do not duplicate the release into Asana or daily memory.
+
+## CI and deployment ownership
+
+Routine history updates do not need a local Astro build, browser screenshots, GitHub Actions watching, Cloudflare polling or live-site readback. GitHub Actions already runs the full Astro check/build and dependency audit on every push; Cloudflare Pages deploys from the Git repository. A GitHub failure email is the asynchronous exception path handled by inbox triage.
+
+Run the full verification chain only when changing the schema, validator, components, styling, routing, CI/deployment, when a failure notification arrives, or when Anthony explicitly requests release verification.
 
 ## Corrections and rollback
 
-For a factual correction, edit the same room record, re-run the full check, commit the correction and verify the live page. Do not add a second room to compensate for a typo.
+For a factual correction, edit the same room record, run the bounded validation, commit and push. Do not add a second room to compensate for a typo.
 
 For an unsafe or materially wrong publication, revert the offending commit, push the revert, and verify that Cloudflare serves the previous version. Preserve the original message or photo privately as evidence; do not rewrite Git history.
 
