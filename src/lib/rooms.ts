@@ -69,7 +69,8 @@ export function formatDuration(value: string | null): string {
   if (!value) return 'Unknown';
   const [hours, minutes, seconds] = value.split(':').map(Number);
   if (hours === 0) return `${minutes}:${String(seconds).padStart(2, '0')}`;
-  return `${hours}h ${String(minutes).padStart(2, '0')}m`;
+  const secondsLabel = seconds === 0 ? '' : ` ${String(seconds).padStart(2, '0')}s`;
+  return `${hours}h ${String(minutes).padStart(2, '0')}m${secondsLabel}`;
 }
 
 export function roomPhotoCaption(room: Room): string | null {

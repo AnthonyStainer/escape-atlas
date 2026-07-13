@@ -7,8 +7,8 @@
     "workbook": "trenna-escape-rooms-2026-07-11.xlsx",
     "workbookSha256": "0513e77c0c6cd367cc71ce1f2f60799594ac27066bfe0898a3f5fcdffdd97f28",
     "migrationRecordCount": 159,
-    "recordCount": 160,
-    "updated": "2026-07-11"
+    "recordCount": 162,
+    "updated": "2026-07-13"
   },
   "rooms": [
     {
@@ -2532,6 +2532,52 @@
         "src": "/images/rooms/160-outatime.jpg",
         "alt": "Anthony and Trenna smiling after completing Outatime, with Anthony holding the 37:18 finish timer.",
         "caption": "Outatime completed in 37:18.",
+        "width": 2560,
+        "height": 1920
+      }
+    },
+    {
+      "id": 161,
+      "date": "2026-07-12",
+      "location": "Halifax",
+      "venue": "Escaporium",
+      "game": "Area 51.5",
+      "completionTime": "01:06:20",
+      "completionSeconds": 3980,
+      "players": 2,
+      "allottedMinutes": 75,
+      "notes": null,
+      "sourceFlags": [
+        "message-confirmed",
+        "photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/161-area-51-5.jpg",
+        "alt": "Anthony and Trenna smiling after completing Area 51.5 at Escaporium, holding the 66:20 result board in the laboratory set.",
+        "caption": "Area 51.5 completed in 66:20.",
+        "width": 2560,
+        "height": 1707
+      }
+    },
+    {
+      "id": 162,
+      "date": "2026-07-12",
+      "location": "Halifax",
+      "venue": "Escaporium",
+      "game": "Operation Moonshine",
+      "completionTime": "00:45:13",
+      "completionSeconds": 2713,
+      "players": 2,
+      "allottedMinutes": 60,
+      "notes": null,
+      "sourceFlags": [
+        "message-confirmed",
+        "photo-confirmed"
+      ],
+      "photo": {
+        "src": "/images/rooms/162-operation-moonshine.jpg",
+        "alt": "Anthony and Trenna smiling after completing Operation Moonshine at Escaporium, holding the 45:13 result board and saloon props.",
+        "caption": "Operation Moonshine completed in 45:13.",
         "width": 2560,
         "height": 1920
       }
