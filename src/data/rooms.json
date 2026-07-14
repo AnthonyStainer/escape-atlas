@@ -2604,11 +2604,11 @@
       "location": "Nottingham",
       "venue": "Break Escape",
       "game": "Robin Hood",
-      "completionTime": "00:40:29",
-      "completionSeconds": 2429,
+      "completionTime": "00:41:29",
+      "completionSeconds": 2489,
       "players": 2,
       "allottedMinutes": 60,
-      "notes": "Result card showed 19:31 remaining",
+      "notes": "Result card showed 18:31 remaining",
       "sourceFlags": [
         "message-confirmed",
         "photo-confirmed"
