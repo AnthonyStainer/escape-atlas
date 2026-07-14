@@ -1,21 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-13T08:42:44.438Z",
+  "generatedAt": "2026-07-14T16:09:23.000Z",
   "source": "Fastmail calendar (public-safe derived snapshot)",
   "window": {
     "start": "2026-07-13T09:42:00+01:00",
     "end": "2027-12-31T23:59:59+00:00"
   },
   "eventConvention": "Escape room — <game> @ <venue>",
-  "events": [
-    {
-      "id": "2026-07-13-robin-hood-break-escape",
-      "date": "2026-07-13",
-      "time": "10:30",
-      "location": "Break Escape, 107 Upper Parliament Street, Nottingham NG1 6LA",
-      "venue": "Break Escape",
-      "game": "Robin Hood",
-      "note": null
-    }
-  ]
+  "events": []
 }

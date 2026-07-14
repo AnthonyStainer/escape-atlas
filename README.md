@@ -6,7 +6,7 @@ Target: [atlas.mei.place](https://atlas.mei.place)
 
 ## What It Contains
 
-- A validated canonical history of 162 completed rooms from 2015–2026.
+- A validated canonical history of 164 completed rooms from 2015–2026.
 - A searchable and filterable history.
 - Individual room pages that preserve unknown source fields honestly.
 - Evidence-safe statistics and frequency summaries.
